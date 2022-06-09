@@ -8,13 +8,13 @@ function Router() {
         <BrowserRouter>
             <Routes>
                 <Route
-                    path="/"
+                    path={`${process.env.PUBLIC_URL}/`}
                     element={
                         <Coins />
                     }
                 />
                 <Route
-                    path="/:coinId/*"
+                    path={`${process.env.PUBLIC_URL}/:coinId/*`}
                     element={
                         <Coin />
                     }
