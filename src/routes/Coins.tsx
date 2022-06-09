@@ -94,7 +94,7 @@ function Coins() {
                     <CoinList>
                         {data?.slice(0,100).map((coin) =>
                             <Coin key={coin.id}>
-                                <Link to={`/${coin.id}`}
+                                <Link to={`${process.env.PUBLIC_URL}/${coin.id}`}
                                       state={{ name: coin.name }}
                                 >
                                     <Img src={`https://cryptocurrencyliveprices.com/img/${coin.id}.png`} alt=""></Img>

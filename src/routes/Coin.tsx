@@ -217,7 +217,7 @@ function Coin() {
     const chartMatch = useMatch("/:coinId/chart");
     const navigate = useNavigate();
     const onBackBtnClick = () => {
-        navigate('/');
+        navigate(`${process.env.PUBLIC_URL}/`);
     }
 
     return (
