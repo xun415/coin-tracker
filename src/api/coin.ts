@@ -38,7 +38,7 @@ function getDateWeekBef(today: Date): string {
     const month = today.getMonth();   // 월
     const day = today.getDate();      // 일
 
-    const weekBef = new Date(year, month, day - 7);
+    const weekBef = new Date(year, month, day - 6);
 
     return dateFormat(weekBef);
 
